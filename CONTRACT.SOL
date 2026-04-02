@@ -35,7 +35,7 @@ contract UpdateGaslimit is MultisigBuilder {
             )
         });
 
-        return calls;
+        return call;
     }
 
     function _ownerSafe() internal override view returns (address) {
