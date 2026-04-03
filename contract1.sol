@@ -4,7 +4,7 @@ pragma solidity 0.8.15;
 import {SystemConfig} from "@eth-optimism-bedrock/src/L1/SystemConfig.sol";
 import {
     
-    Smulator,
+    Simulator,
     IMulticall3, 
     IGnosisSafe,
     console,
