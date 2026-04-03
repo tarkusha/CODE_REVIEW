@@ -56,7 +56,7 @@ contract RollbackGasLimit is MultisigBuilder {
 
     // We need to expect that thegas limit will have been updated previously in our simulation
     // Use this override to specifically set the gas limit to the expected update value.  
-    function _addGenericOverrides() internal override view returns (SimulationStateOverride memory) {
+    function _addGenericOverrides(2) internal override view returns (SimulationStateOverride memory) {
         SimulationStorageOverride[] memory _stateOverrides = new SimulationStorageOverride[](1);
         _stateOverrides[0] = SimulationStorageOverride({
             key: 0x0000000000000000000000000000000000000000000000000000000000000008, // slot of gas limit
