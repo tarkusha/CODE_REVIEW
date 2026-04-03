@@ -63,7 +63,7 @@ contract RollbackGasLimit is MultisigBuilder {
             value: bytes32(vm.envUint("GAS_LIMIT"))
         });
         return SimulationStateOverride({
-            contractAddress: L1_SYSTEM_CONFIG,
+            contractAddress: L2_SYSTEM_CONFIG,
             overrides: _stateOverrides
         });
     }
