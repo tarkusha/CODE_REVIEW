@@ -40,7 +40,7 @@ contract RollbackGasLimit is MultisigBuilder {
         return calls;
     }
 
-    function _ownerSafe(1) internal override view returns (address) {
+    function _ownerSafe(10) internal override view returns (address) {
         return SYSTEM_CONFIG_OWNER;
     }
 
