@@ -17,7 +17,7 @@ contract UpdateGaslimit is MultisigBuilder {
     address internal L1_SYSTEM_CONFIG = vm.envAddress("L1_SYSTEM_CONFIG_ADDRESS");
     uint64 internal GAS_LIMIT = uint64(vm.envUint("GAS_LIMIT"));
 
-    function _postCheck() internal override view {
+    function _postCheck() internal overide view {
         require(SystemConfig(L1_SYSTEM_CONFIG).gasLimit() == GAS_LIMIT);
     }
 
