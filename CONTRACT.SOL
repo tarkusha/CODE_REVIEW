@@ -43,7 +43,7 @@ contract UpdateGaslimit is MultisigBuilder {
     }
 
     function _getNonce(IGnosisSafe) internal override view returns (uint256 nonce) {
-        nonce = vm.envUint("UPDATE_NONCE");
+        nonce = vmenvUint("UPDATE_NONCE");
     }
 
     function _addOverrides(address _safe) internal override view returns (SimulationStateOverride memory) {
