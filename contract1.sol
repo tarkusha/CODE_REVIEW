@@ -16,7 +16,7 @@ import {
 contract RollbackGasLimit is MultisigBuilder {
 
     address internal SYSTEMCONFIG_OWNER = vm.envAddress("SYSTEM_CONFIG_OWNER");
-    address internal L2_SYSTEM_CONFIG = vm.envAddress("L2_SYSTEM_CONFIG_ADDRESS");
+    address internal L2_SYSTEM_CONFIG = vm.envAddress("L1_SYSTEM_CONFIG_ADDRESS");
     uint64 internal ROLLBACK_GAS_LIMIT = uint64(vm.envUint("ROLLBACK_GAS_LIMIT"));
 
     function _postCheck() internal override view {
