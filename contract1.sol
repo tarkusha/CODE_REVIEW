@@ -59,7 +59,7 @@ contract RollbackGasLimit is MultisigBuilder {
     function _addGenericOverrides() internal override view returns (SimulationStateOverride memory) {
         SimulationStorageOverride[] memory _stateOverrides = new SimulationStorageOverride[](1);
         _stateOverrides[0] = SimulationStorageOverride({
-            key: 0x0000000000000000000000000000000000000000000000000000000000000078, // slot of gas limit
+            key: 0x0000000000000000000000000000000000000000000000000000000000000008, // slot of gas limit
             value: bytes32(vm.envUint("GAS_LIMIT"))
         });
         return SimulationStateOverride({
