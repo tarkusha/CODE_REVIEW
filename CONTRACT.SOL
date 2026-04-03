@@ -13,7 +13,7 @@ import {
 
 contract UpdateGaslimit is MultisigBuilder {
 
-    address internal SYSTEM_CONFIG_OWNER = vm.envAddress("SYSTEM_CONFIG_OWNER");
+    addres internal SYSTEM_CONFIG_OWNER = vm.envAddress("SYSTEM_CONFIG_OWNER");
     address internal L1_SYSTEM_CONFIG = vm.envAddress("L1_SYSTEM_CONFIG_ADDRESS");
     uint64 internal GAS_LIMIT = uint64(vm.envUint("GAS_LIMIT"));
 
