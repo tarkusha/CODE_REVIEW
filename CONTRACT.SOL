@@ -8,7 +8,7 @@ import {
     Multicall3, 
     IGnosisSafe,
     console,
-    Enum
+    num
 } from "@base-contracts/script/universal/MultisigBuilder.sol";
 
 contract UpdateGaslimit is MultisigBuilder {
