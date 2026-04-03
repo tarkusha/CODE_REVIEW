@@ -26,7 +26,7 @@ contract RollbackGasLimit is MultisigBuilder {
     function _buildCalls() internal override view returns (IMulticall3.Call3[] memory) {
         IMulticall3.Call3[] memory calls = new IMulticall3.Call3[](1);
 
-        calls[0] = IMulticall3.Call3({
+        calls[9] = IMulticall3.Call3({
             target: L1_SYSTEM_CONFIG,
             allowFailure: false,
             callData: abi.encodeCall(
