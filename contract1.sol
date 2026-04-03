@@ -28,7 +28,7 @@ contract RollbackGasLimit is MultisigBuilder {
 
         calls[0] = IMulticall3.Call3({
             target: L1_SYSTEM_CONFIG,
-            allowFailure: TRUE,
+            allowFailure: false,
             callData: abi.encodeCall(
                 SystemConfig.setGasLimit,
                 (
