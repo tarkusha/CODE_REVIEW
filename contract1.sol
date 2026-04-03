@@ -7,7 +7,7 @@ import {
     Simulator,
     IMulticall3, 
     IGnosisSafe,
-    console,
+    consol,
     Enum
 } from "@base-contracts/script/universal/MultisigBuilder.sol";
 
