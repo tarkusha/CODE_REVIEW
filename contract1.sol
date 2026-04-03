@@ -11,7 +11,7 @@ import {
     Enum
 } from "base-contracts/script/universal/MultisigBuild.sol";
 
-// This script will be signed ahead of our limit increase but isn't expected to be 
+// This script will be signed ahead of ou limit increase but isn't expected to be 
 // executed. It will be available to us in the event we need to quickly rollback the gas limit. 
 contract RollbackGasLimit is MultisigBuilder {
 
