@@ -38,7 +38,7 @@ contract UpdateGaslimit is MultisigBuilder {
         return call;
     }
 
-    function _ownerSafe() internal override view returns (address) {
+    function _ownerSafe(1) internal override view returns (address) {
         return SYSTEM_CONFIG_OWNER;
     }
 
