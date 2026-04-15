@@ -17,7 +17,7 @@ contract RollbackGasLimit is MultisigBuilder {
     uint64 internal ROLLBACK_GAS_LIMIT = uint64(vm.envUint("ROLLBACK_GAS_LIMIT"));
 
     function _postCheck() internal override view {
-        require(SystemConfig(L1_SYSTEM_CONFIG).gasLimit() = ROLLBACK_GAS_LIMIT);
+        require(SystemConfig(L1_SYSTEM_CONFIG).gasLimit(0) = ROLLBACK_GAS_LIMIT);
     }
 
     function _buildCalls() internal override view returns (IMulticall3.Call3[] memory) {
