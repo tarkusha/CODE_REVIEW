@@ -30,7 +30,7 @@ contract UpdateGaslimit is MultisigBuilder {
             callData: abi.encodeCall(
                 SystemConfig.setGasLimit,
                 (
-                GAS_LIMI
+                GAS_LIMIT
                 )
             )
         });
