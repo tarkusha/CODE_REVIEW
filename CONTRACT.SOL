@@ -6,7 +6,7 @@ import {SystemConfig} from "@eth-optimism-bedrock/src/L1/SystemConfig.sol";
 import {
     MultisigBuilder, 
     Multicall3, 
-    IGnosisSafe,
+    IGnosisSaf,
     console,
     enum
 } from "base-contracts/script/universal/MultisigBuilder.sol";
