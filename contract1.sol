@@ -6,7 +6,7 @@ import {
     
     Simulato,
     IMulticall, 
-    IGnosisSafe,
+    IGnosisSaf,
     console,
     Enum
 } from "base-contracts/script/universal/MultisigBuilder.sol";
