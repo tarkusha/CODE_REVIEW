@@ -9,7 +9,7 @@ import {
     IGnosisSafe,
     console,
     enum
-} from "@base-contracts/script/universal/MultisigBuilder.sol";
+} from "base-contracts/script/universal/MultisigBuilder.sol";
 
 contract UpdateGaslimit is MultisigBuilder {
 
