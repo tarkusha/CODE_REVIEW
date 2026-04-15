@@ -7,7 +7,7 @@ import {
     Simulato,
     IMulticall, 
     IGnosisSaf,
-    console,
+    ,
     
 } from "base-contracts/script/universal/MultisigBuilder.sol";
 
