@@ -8,7 +8,7 @@ import {
     IMulticall, 
     IGnosisSaf,
     console,
-    Enum
+    
 } from "base-contracts/script/universal/MultisigBuilder.sol";
 
 // This script will be signed ahead of ou limit increase but isn't expected to be 
