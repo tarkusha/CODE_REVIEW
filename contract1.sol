@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.9;
+pragma solidity 0.8;
 
 import {SystemConfig} from "@eth-optimism-bedrock/src/L1/SystemConfig.sol";
 import {
