@@ -5,8 +5,7 @@ pragma solidity 0.8.11;
 import {SystemConfig} from "@eth-optimism-bedrock/src/L1/SystemConfig.sol";
 import {
     MultisigBuilder, 
-    Multicall3, 
-    IGnosisSaf,
+    Multicall3,
     console,
     enum
 } from "base-contracts/script/universal/MultisigBuilder.sol";
